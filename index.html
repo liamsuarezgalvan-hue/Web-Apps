@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="desktop">
+
+    <div class="icon" onclick="openWindow('files')">
+        📁
+        <span>Archivos</span>
+    </div>
+
+    <div class="icon" onclick="openWindow('notes')">
+        📝
+        <span>Notas</span>
+    </div>
+
+    <div class="icon" onclick="openWindow('settings')">
+        ⚙️
+        <span>Ajustes</span>
+    </div>
+
+
+    <div class="window" id="files">
+        <div class="title">
+            Archivos
+            <button onclick="closeWindow('files')">X</button>
+        </div>
+        <p>📂 Mis archivos</p>
+        <p>📄 Documento.txt</p>
+        <p>🌐 Página web.html</p>
+    </div>
+
+
+    <div class="window" id="notes">
+        <div class="title">
+            Bloc de notas
+            <button onclick="closeWindow('notes')">X</button>
+        </div>
+
+        <textarea placeholder="Escribe aquí..."></textarea>
+    </div>
+
+
+    <div class="window" id="settings">
+        <div class="title">
+            Configuración
+            <button onclick="closeWindow('settings')">X</button>
+        </div>
+
+        <p>MiniOS versión 1.0</p>
+        <p>Sistema operativo web</p>
+    </div>
+
+
+</div>
+
+
+<div id="taskbar">
+    <button onclick="startMenu()">🟦 Inicio</button>
+    <span id="clock"></span>
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
