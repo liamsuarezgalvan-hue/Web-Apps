@@ -1,0 +1,113 @@
+body {
+    margin:0;
+    font-family:Arial, sans-serif;
+    overflow:hidden;
+}
+
+
+#desktop {
+    height:100vh;
+    background:linear-gradient(#4da6ff,#0059b3);
+    position:relative;
+}
+
+
+.icon {
+    width:80px;
+    text-align:center;
+    color:white;
+    margin:20px;
+    cursor:pointer;
+}
+
+
+.icon span {
+    display:block;
+}
+
+
+.window {
+
+    display:none;
+
+    position:absolute;
+    width:300px;
+    height:220px;
+
+    background:white;
+
+    top:100px;
+    left:150px;
+
+    border-radius:10px;
+
+    box-shadow:0 0 20px black;
+
+}
+
+
+.title {
+
+    background:#222;
+    color:white;
+
+    padding:10px;
+
+    display:flex;
+    justify-content:space-between;
+
+}
+
+
+.title button {
+
+    background:red;
+    color:white;
+    border:0;
+
+}
+
+
+textarea {
+
+    width:95%;
+    height:150px;
+
+}
+
+
+#taskbar {
+
+    position:absolute;
+
+    bottom:0;
+
+    width:100%;
+
+    height:45px;
+
+    background:#111;
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+#taskbar button {
+
+    margin:5px;
+
+}
+
+
+#clock {
+
+    margin-left:auto;
+
+    margin-right:15px;
+
+}
